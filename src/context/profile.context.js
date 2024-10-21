@@ -13,7 +13,7 @@ export const ProfileProvider = ({ children }) => {
     if (authenticationToken) {
       const fetchProfile = async () => {
         try {
-          const response = await fetch('http://localhost:5000/api/twitter/user', {
+          const response = await fetch('https://twitter-2-o-server.onrender.com/api/twitter/user', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
