@@ -19,7 +19,7 @@ const Dashboard = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/twitter/usermetrics', {
+      const response = await fetch('https://twitter-2-o-server.onrender.com/api/twitter/usermetrics', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
