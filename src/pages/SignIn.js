@@ -52,7 +52,7 @@ const SignIn = () => {
   // Function to exchange the authorization code for an access token
   const exchangeCodeForToken = async (authorizationCode) => {
     try {
-      const response = await fetch('http://localhost:5000/api/twitter/token', {
+      const response = await fetch('https://twitter-2-o-server.onrender.com/api/twitter/token', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
