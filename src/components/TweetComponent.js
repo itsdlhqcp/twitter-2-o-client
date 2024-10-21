@@ -17,7 +17,7 @@ const TweetComponent = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/twitter/user/tweets', {
+      const response = await fetch('https://twitter-2-o-server.onrender.com/api/twitter/user/tweets', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
